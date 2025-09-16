@@ -1,39 +1,182 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Startup Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./others/aos.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav--content">
-        <div class="logo">
-          <img src="./assets/cube.png" alt="" />
-        </div>
-        <div class="right">
-          <a class="signup-btn">Sign In</a>
-          <button class="getStarted-btn">Get Started <span class="arrow">→ </span></button>
-        </div>
-      </div>
-    </nav>
-    <section class="hero">
-        <div class="hero--content">
-            <div class="hero--content-title">
-                <h1>A powerful suite of user-centric products</h1>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="background--top">
+        <img class="hero-illustration" src="./assets/hero-illustration.svg" alt="">
+        <nav>
+            <div class="nav--content">
+                <div class="logo">
+                    <img src="./assets/cube.png" alt="" />
+                </div>
+                <div class="right">
+                    <a class="signup-btn">Sign In</a>
+                    <button class="getStarted-btn">Get Started <span class="arrow">→ </span></button>
+                </div>
             </div>
-            <div class="hero--content-content">
-                <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+        </nav>
+        <section class="hero">
+            <div class="hero--content">
+                <div class="hero--content-title">
+                    <h1>A powerful suite of user-centric products</h1>
+                </div>
+                <div class="hero--content-content">
+                    <p>Our landing page template works on all devices, so you only have to set it up once, and get
+                        beautiful results forever.</p>
+                </div>
+                <div class="buttons">
+                    <button class="getStarted-btn">Get Started Free<span class="arrow">→ </button>
+                    <button class="read-btn">Read Docs</button>
+                </div>
             </div>
-            <div class="buttons">
-                <button class="getStarted-btn">Get Started Free<span class="arrow">→ </button>
-                <button class="read-btn">Read Docs</button>
+            <img class="hero-img" src="./assets/hero-image.png" alt="">
+        </section>
+    </div>
+    <main>
+        <section class="reviews">
+            <div class="mx-48">
+                <div class="flex items-center justify-between py-20">
+                    <article class="flex flex-col items-center justify-center w-80 h-60 px-4">
+                        <header class="flex flex-col items-start justify-center my-3">
+                            <img src="./assets/testimonial-01.jpg" alt=""
+                                class="flex items-center rounded-full h-10 w-10 my-3 mx-5">
+                            <img src="./assets/rating-stars2.png" alt="" class="w-24 h-6">
+                        </header>
+                        <div class="reviews--content">
+                            <p class="text-slate-500 italic">"The only tool that has the technology to meet our unique
+                                and complex needs."</p>
+                            <p class="text-white text-sm my-3 flex justify-center font-semibold">Trustpilot <span
+                                    class="text-indigo-500">- 4.9/5</span> </p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col items-center justify-center w-80 h-60 px-4">
+                        <header class="flex flex-col items-start justify-center my-3">
+                            <img src="./assets/testimonial-02.jpg" alt=""
+                                class="flex items-center rounded-full h-10 w-10 my-3 mx-5">
+                            <img src="./assets/rating-stars2.png" alt="" class="w-24 h-6">
+                        </header>
+                        <div class="reviews--content">
+                            <p class="text-slate-500 italic">"The only tool that has the technology to meet our unique
+                                and complex needs."</p>
+                            <p class="text-white text-sm my-3 flex justify-center font-semibold">Capterra <span
+                                    class="text-indigo-500">- 4.7/5</span> </p>
+                        </div>
+                    </article>
+                    <article class="flex flex-col items-center justify-center w-80 h-60 px-4">
+                        <header class="flex flex-col items-start justify-center my-3">
+                            <img src="./assets/testimonial-03.jpg" alt=""
+                                class="flex items-center rounded-full h-10 w-10 my-3 mx-5">
+                            <img src="./assets/rating-stars2.png" alt="" class="w-24 h-6">
+                        </header>
+                        <div class="reviews--content">
+                            <p class="text-slate-500 italic">"The only tool that has the technology to meet our unique
+                                and complex needs."</p>
+                            <p class="text-white text-sm my-3 flex justify-center font-semibold">G2 <span
+                                    class="text-indigo-500">- 4.9/5</span> </p>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-        <img  class="hero-img" src="./assets/hero-image.png" alt="">
-    </section>
-    <main>       
+        </section>
+        <hr class="w-4/5 mx-auto my-6 border-t border-slate-500" />
+        <section class="creativity mx-44 px-6">
+            <div class="py-20">
+                <header class="pb-20 mx-40 text-center">
+                    <h2 class="mb-4 text-6xl text-slate-200 font-bold">Many tools to express your creativity</h2>
+                    <p class="text-xl text-slate-500 px-14">Exceptuer sint occaecat non proident , sunt in culpa qui
+                        officia deserunt mollit anim id est.</p>
+                </header>
+                <div class="slider carousel flex items-center gap-6 px-6 cursor-grab overflow-x-auto no-scrollbar snap-x snap-mandatory" aria-live="off">
+                    <article id="0"
+                        class="swiper-sllide w-[352px] h-[254px] flex-shrink-0 p-6 rounded-xl shadow-md snap-center bg-slate-800 transition-transform duration-300 ease-out hover:scale-105" role="group" aria-label="1/4">
+                        <img class="w-14 h-14 mb-3" src="./assets/features-icon-01.svg" alt="">
+                        <div class="content">
+                            <p class="text-lg font-semibold text-white mb-2">Collaboration</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do euismod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="flex flex-row-reverse justify-start">
+                            <p
+                                class="inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
+                                Learn More <span class="ml-1">→</span></p>
+                        </div>
+                    </article>
+                    <article id="1"
+                        class="swiper-sllide w-[352px] h-[254px] flex-shrink-0 p-6 rounded-xl shadow-md snap-center bg-slate-800 transition-transform duration-300 ease-out hover:scale-105" role="group" aria-label="2/4">
+                        <img class="w-14 h-14 mb-3" src="./assets/features-icon-02.svg" alt="">
+                        <div class="content">
+                            <p class="text-lg font-semibold text-white mb-2">Experiences</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do euismod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="flex flex-row-reverse justify-start">
+                            <p
+                                class="inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
+                                Learn More <span class="ml-1">→</span></p>
+                        </div>
+                    </article>
+                    <article id="2"
+                        class="swiper-sllide w-[352px] h-[254px] flex-shrink-0 p-6 rounded-xl shadow-md snap-center bg-slate-800 transition-transform duration-300 ease-out hover:scale-105" role="group" aria-label="3/4">
+                        <img class="w-14 h-14 mb-3" src="./assets/features-icon-03.svg" alt="">
+                        <div class="content">
+                            <p class="text-lg font-semibold text-white mb-2">Animation</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do euismod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="flex flex-row-reverse justify-start">
+                            <p
+                                class="inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
+                                Learn More <span class="ml-1">→</span></p>
+                        </div>
+                    </article>
+                    <article id="3"
+                        class="swiper-sllide w-[352px] h-[254px] flex-shrink-0 p-6 rounded-xl shadow-md snap-center bg-slate-800 transition-transform duration-300 ease-out hover:scale-105" role="group" aria-label="4/4">
+                        <img class="w-14 h-14 mb-3" src="./assets/features-icon-04.svg" alt="">
+                        <div class="content">
+                            <p class="text-lg font-semibold text-white mb-2">Modelling</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do euismod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="flex flex-row-reverse justify-start">
+                            <p
+                                class="inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
+                                Learn More <span class="ml-1">→</span> </p>
+                        </div>
+                    </article>
+                </div>
+                <footer class="mt-[48px] flex flex-row-reverse justify-start px-6">
+                    <button
+                        class="carousel-next flex items-center justify-center ml-[16px] w-[56px] h-[56px] rounded-full border border-slate-600 text-slate-200 hover:bg-gray-600 hover:text-white transition "
+                        aria-label="Next slide">
+                        <span class="text-lg">→ </span>
+                    </button>
+                    <button
+                        class="carousel-prev flex items-center justify-center ml-[16px] w-[56px] h-[56px] rounded-full border border-slate-600 text-slate-200 hover:bg-gray-600 hover:text-white transition "
+                        aria-label="Previous slide">
+                        <span class="text-lg">← </span>
+                    </button>
+                </footer>
+            </div>
+        </section>
     </main>
-  </body>
+    <script src="./script.js" defer></script>
+</body>
+
 </html>
