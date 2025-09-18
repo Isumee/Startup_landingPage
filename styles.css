@@ -6,7 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   /* Chrome, Safari, Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -213,6 +212,46 @@ nav {
     height: 500px;
     margin: 0 92px;
     padding: 80px 0 0;
+  }
+}
+
+.creativity {
+  position: relative;
+  /* width: 100%; */
+  background-color: none;
+
+  .feature-illustration {
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 0;
+    width: 840px;
+    height: 400px;
+    opacity: 50%;
+  }
+  .feature-sect {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.feature {
+  position: relative;
+
+  .feature-illustration{
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 0;
+    width: 840px;
+    height: 400px;
+    opacity: 50%;
+  }
+  .f_body{
+    position: relative;
+    z-index: 10;
   }
 }
 
