@@ -85,8 +85,14 @@ nav {
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
         font-weight: 400;
-        background-color: none;
+        background-color: transparent;
         padding: 8px 20px;
+        cursor: pointer;
+        transition:  transform 150ms ease, color 150ms ease;
+      }
+      .signup-btn:hover {
+        transform: translateX(2px);
+        color: #fff;        
       }
       .getStarted-btn {
         display: flex;
@@ -121,6 +127,8 @@ nav {
     }
   }
 }
+
+
 
 .hero {
   padding-top: 80px;
@@ -239,7 +247,7 @@ nav {
 .feature {
   position: relative;
 
-  .feature-illustration{
+  .feature-illustration {
     position: absolute;
     right: 0;
     /* top: 0; */
@@ -249,7 +257,7 @@ nav {
     height: 400px;
     opacity: 50%;
   }
-  .f_body{
+  .f_body {
     position: relative;
     z-index: 10;
   }

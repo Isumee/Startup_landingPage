@@ -23,7 +23,7 @@
                     <img src="./assets/cube.png" alt="" />
                 </div>
                 <div class="right">
-                    <a class="signup-btn">Sign In</a>
+                    <p class="signup-btn">Sign In</p>
                     <button class="getStarted-btn">Get Started <span class="arrow">→ </span></button>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="flex flex-row-reverse justify-start">
                             <p
-                                class="inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
+                                class="transition-transform duration-300 hover:scale-1 inline-flex items-center mt-4 text-indigo-400 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500/40 rounded">
                                 Learn More <span class="ml-1">→</span></p>
                         </div>
                     </article>
@@ -202,26 +202,114 @@
                         </div>
                         <div>
                             <div data-category="1" class="space-y-2">
-                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Kickstart your project with these tools</h3>
-                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
+                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Kickstart your
+                                    project with these tools</h3>
+                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
                             </div>
                             <div data-category="2" class="space-y-2">
-                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Tech tools to kickstart freelance life</h3>
-                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
+                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Tech tools to
+                                    kickstart freelance life</h3>
+                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
                             </div>
                             <div data-category="3" class="space-y-2">
-                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Share your plan and clarify project risk</h3>
-                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
+                                <h3 class="text-[32px] text-slate-100 pr-[46px] mb-[8px] font-bold">Share your plan and
+                                    clarify project risk</h3>
+                                <p class="text-slate-500 text-[18px]">Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt laborum.</p>
                             </div>
                         </div>
                     </div>
                     <div class="ml-[80px]">
-                        <img src="./assets/features-image.png" alt="Feature" width="480" height="414" class="rounded shadow">
+                        <img src="./assets/features-image.png" alt="Feature" width="480" height="414"
+                            class="rounded shadow">
                     </div>
                 </div>
             </div>
-            <hr class="w-4/5 mx-auto my-6 border-t border-slate-800" />
-            <div></div>
+            <hr class="w-4/5 border-t border-slate-800" />
+            <div class="pt-[80px] pb-[40px]">
+                <div class="pb-[80px] mx-[168px] text-center">
+                    <h2 class="text-6xl text-slate-200 font-bold ">An Ecosystem of Integrations</h2>
+                </div>
+                <div class="relative flex justify-center items-center p-[64px]">
+                    <img class="dots absolute z-0 w-[557px] h-[128px] opacity-50" src="./assets/dots2.png" alt="">
+                    <svg class="halo absolute z-10" width="400" height="400" viewBox="0 0 400 400"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <!-- Halo circles -->
+                        <circle cx="200" cy="200" r="100" fill="rgba(99,102,241,0.25)">
+                            <animate attributeName="r" values="100;120;100" dur="4s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
+                        </circle>
+
+                        <circle cx="200" cy="200" r="100" fill="rgba(99,102,241,0.15)">
+                            <animate attributeName="r" values="100;130;100" dur="6s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0.4;0.1;0.4" dur="6s" repeatCount="indefinite" />
+                        </circle>
+                    </svg>
+                    <img class="logo absolute z-20 w-[64px] h-[64px]" src="./assets/cube.png" alt="">
+                </div>
+                <div class="mt-[56px] w-[2px] h-[32px] bg-[#1e293b] mx-auto"></div>
+                <div class="flex justify-center mx-auto">
+                    <div class="w-[94px] h-[2px] bg-[#1e293b]"></div>
+                    <div class="w-[188px] h-[2px] bg-[#1e293b]"></div>
+                    <div class="w-[188px] h-[2px] bg-[#1e293b]"></div>
+                    <div class="w-[188px] h-[2px] bg-[#1e293b]"></div>
+                    <div class="w-[188px] h-[2px] bg-[#1e293b]"></div>
+                    <div class="w-[94px] h-[2px] bg-[#1e293b]"></div>
+                </div>
+                <div class="flex justify-between mx-auto items-center w-[940px]">
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                    <div class="w-[2px] h-[24px] bg-[#1e293b]"></div>
+                </div>
+                <div class="flex justify-between mt-[20px] mx-auto">
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75 ">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-01.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-02.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-03.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-04.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-04.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-05.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="w-[2px] h-[32px] mx-auto bg-[#1e293b] mt-[40px]"></div>
+            </div>
+            <div class="pt[40px] pb-[80px]">
+                <div class="pb-[80px] mx-[168px] text-center">
+                    <h2 class="text-6xl mb-[16px] text-slate-200 font-bold ">Let's find the right plan for your business</h2>
+                    <p class="text-xl text-slate-500 px-14">Exceptuer sint occaecat non proident , sunt in culpa qui
+                        officia deserunt mollit anim id est.</p>
+                </div>
+            </div>
         </section>
     </main>
     <script src="./script.js" defer></script>
