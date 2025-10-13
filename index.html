@@ -271,33 +271,39 @@
                 </div>
                 <div class="flex justify-between mt-[20px] mx-auto">
                     <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75 ">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75 ">
                             <img class="w-[46px] h-[46px]" src="./assets/integration-icon-01.svg" alt="">
                         </span>
                     </div>
                     <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
                             <img class="w-[46px] h-[46px]" src="./assets/integration-icon-02.svg" alt="">
                         </span>
                     </div>
                     <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
                             <img class="w-[46px] h-[46px]" src="./assets/integration-icon-03.svg" alt="">
                         </span>
                     </div>
                     <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
                             <img class="w-[46px] h-[46px]" src="./assets/integration-icon-04.svg" alt="">
                         </span>
                     </div>
                     <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
-                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-04.svg" alt="">
-                        </span>
-                    </div>
-                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
-                        <span class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
                             <img class="w-[46px] h-[46px]" src="./assets/integration-icon-05.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="w-[164px] h-[164px] bg-[#1e293b] p-[8px] flex items-center justify-center">
+                        <span
+                            class="w-[80px] h-[80px] rounded-full bg-slate-900 flex items-center justify-center opacity-75">
+                            <img class="w-[46px] h-[46px]" src="./assets/integration-icon-06.svg" alt="">
                         </span>
                     </div>
                 </div>
@@ -305,13 +311,368 @@
             </div>
             <div class="pt[40px] pb-[80px]">
                 <div class="pb-[80px] mx-[168px] text-center">
-                    <h2 class="text-6xl mb-[16px] text-slate-200 font-bold ">Let's find the right plan for your business</h2>
+                    <h2 class="text-6xl mb-[16px] text-slate-200 font-bold ">Let's find the right plan for your business
+                    </h2>
                     <p class="text-xl text-slate-500 px-14">Exceptuer sint occaecat non proident , sunt in culpa qui
                         officia deserunt mollit anim id est.</p>
                 </div>
+                <div class="relative">
+                    <div
+                        class="grid grid-cols-[3fr_1fr_1fr_1fr] divide-x mx-auto text-[#e2e8f0] text-base z-10 relative">
+                        <div
+                            class="flex items-center gap-4 text-[#64748b] bg-[#1e293b] py-4 px-6 border border-slate-700 border-t-0 border-r-0 border-b-0">
+
+                            <!-- Monthly label -->
+                            <span id="monthly-label" class="">Monthly</span>
+
+                            <!-- Toggle -->
+                            <label for="toggle" class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="toggle" x-model="annual" class="sr-only peer" />
+                                <div
+                                    class="w-12 h-6 bg-slate-600 rounded-full peer-checked:bg-indigo-500 transition-colors">
+                                </div>
+                                <div
+                                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform peer-checked:translate-x-6">
+                                </div>
+                            </label>
+
+                            <!-- Yearly label -->
+                            <span id="yearly-label" class="ml-4">Yearly</span>
+                            <span class="text-green-400">(-20%)</span>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] grid grid-rows-[1fr_1fr] items-stretch justify-center">
+                            <div class="text-[#6366f1] text-lg font-semibold">Starter</div>
+                            <div class="text-2xl font-semibold"><span class="text-xl ">$</span> <span
+                                    class="price-amount"></span> <span class="text-[#64748b] text-sm">/mo</span>
+                            </div>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] grid grid-rows-[1fr_1fr] items-center justify-center">
+                            <div class="text-[#6366f1] text-lg font-semibold">Agency</div>
+                            <div class="text-2xl font-semibold"><span class="text-xl ">$</span> <span
+                                    class="price-amount"></span> <span class="text-[#64748b] text-sm">/mo</span>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#1e293b] py-[16px] px-[24px] border-l-[1px] border-l-slate-700 grid grid-rows-[1fr_1fr] items-center justify-center">
+                            <div class="text-[#6366f1] text-lg font-semibold">Team</div>
+                            <div class="text-2xl font-semibold"><span class="text-xl ">$</span> <span
+                                    class="price-amount"></span> <span class="text-[#64748b] text-sm">/mo</span>
+                            </div>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px] uppercase text-[#64748b] text-[12px] font-semibold">
+                            Usage</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px]">
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px]">
+                        </div>
+                        <div class=" bg-[#33415540] py-[8px] px-[24px] border-l-[1px] border-l-slate-700"></div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px]">
+                            Admins & Members</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            4</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            12</div>
+                        <div
+                            class=" bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            Unlimited</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px]">
+                            File Storage</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center">
+                            10GB</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center">
+                            50GB</div>
+                        <div
+                            class=" bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            Unlimited</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px]">
+                            Active Users</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            500</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            1500</div>
+                        <div
+                            class=" bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            Unlimited</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px] uppercase  text-[#64748b] text-[12px] font-semibold">
+                            features</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px]">
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#33415540] py-[8px] px-[24px]">
+                        </div>
+                        <div class=" bg-[#33415540] py-[8px] px-[24px] border-l-[1px] border-l-slate-700"></div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px]">
+                            Unlimited Activities</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class=" bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px]">
+                            Data Export</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2">
+                                <line x1="0" y1="1" x2="16" y2="1" stroke="currentColor" stroke-width="2"
+                                    class="text-[#64748b]" />
+                            </svg>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class=" bg-[#1e293bb3] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px]">
+                            Adjust Group Sizes</div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="2" viewBox="0 0 16 2">
+                                <line x1="0" y1="1" x2="16" y2="1" stroke="currentColor" stroke-width="2"
+                                    class="text-[#64748b]" />
+                            </svg>
+                        </div>
+                        <div
+                            class="border-slate-700 border-t-0 border-r-0 border-b-0 border bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div
+                            class=" bg-[#1e293b] py-[16px] px-[24px] flex justify-center items-center border-l-[1px] border-l-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-emerald-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div class="border-none py-[8px] px-[24px] bg-[#33415540]"></div>
+                        <div
+                            class="border-slate-700 bg-[#33415540] border-t-0 border-r-0 border-b-0 border p-[16px] flex justify-center items-center">
+                            <button
+                                class="getStarted-btn flex flex-wrap justify-center items-center w-[152px] h-[40px] text-white font-sans text-[16px] font-medium bg-[#6366f1] rounded-[4px] border-none py-[8px] px-[16px] ">Free
+                                Trial<span
+                                    class="arrow inline-block tracking-wide text-[#7dd3fc] text-[16px] ml-[4px] transition-transform ease-in-out">→
+                                </span></button>
+                        </div>
+                        <div
+                            class="border-slate-700 bg-[#33415540] border-t-0 border-r-0 border-b-0 border p-[16px] flex justify-center items-center">
+                            <button
+                                class="getStarted-btn flex flex-wrap justify-center items-center w-[152px] h-[40px] text-white font-sans text-[16px] font-medium bg-[#6366f1] rounded-[4px] border-none py-[8px] px-[16px] ">Free
+                                Trial<span
+                                    class="arrow inline-block tracking-wide text-[#7dd3fc] text-[16px] ml-[4px] transition-transform ease-in-out">→
+                                </span></button>
+                        </div>
+                        <div
+                            class="border-l-[1px] border-l-slate-700 bg-[#33415540] flex justify-center p-[16px] items-center">
+                            <button
+                                class="getStarted-btn flex flex-wrap justify-center items-center w-[152px] h-[40px] text-white font-sans text-[16px] font-medium bg-[#6366f1] rounded-[4px] border-none py-[8px] px-[16px] ">Free
+                                Trial<span
+                                    class="arrow inline-block tracking-wide text-[#7dd3fc] text-[16px] ml-[4px] transition-transform ease-in-out">→
+                                </span></button>
+                        </div>
+                    </div>
+                    <img class="feature-illustration absolute z-0 top-96 left-0 opacity-75 "
+                        src="./assets/features-illustration.svg" alt=""><img
+                        class="feature-illustration absolute z-0 top-96 left-0 opacity-75 "
+                        src="./assets/features-illustration-02.svg" alt="">
+                </div>
             </div>
         </section>
+        <div class="mx-[180px] px-[24px]">
+            <div class="mx-[168px] flex flex-col items-center justify-center">
+                <div class="relative mb-[16px]">
+                    <img src="./assets/testimonial-04.jpg" class="relative z-0 w-[64px] h-[64px] rounded-full" alt="">
+                    <svg class="w-5 h-5 text-indigo-500 fill-current absolute z-10 top-0 right-0" viewBox="0 0 20 18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 18h6.196L9.448 0H3.252L0 18Zm10.552 0h6.196L20 0h-6.196l-3.252 18Z" />
+                    </svg>
+                </div>
+                <div class="mb-[12px] text-[20px] text-[#64748b] italic">"I had to work 8 hours a day on one app. With
+                    Cube, I only need one or two hours. I just need to work on creatives, because everything else is
+                    automated."</div>
+                <div class="text-[16px] font-semibold text-[#cbd5e1]">
+                    Mirta Jiang <span class="text-[#64748b]">-</span> <span class="text-[#6366f1]">Paid Apps</span>
+                </div>
+            </div>
+        </div>
+        <section class="faq mx-[180px] px-[24px]">
+            <div class="py-[80px]">
+                <div class="pb-[80px] text-[60px] text-[#e2e8f0] font-bold">FAQs</div>
+                <div class="grid grid-cols-[1fr_1fr]">
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">What is the difference between the Free and Paid
+                            versions?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">Do I need coding knowledge to use this product?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">Do you have student or non-profit discounts?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">Is there a way to become an Affiliate reseller?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">How is the price determined?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                    <div class="mt-[32px]">
+                        <h4 class="text-[#e2e8f0] text-[20px]">What forms of payment do you accept?</h4>
+                        <p class="text-[#64748b] text-[16px] mt-[8px]">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eisusmod tempor incididunt ut labore et dolore magna aliqua, ut enim
+                            ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="w-5/5 mx-auto border-t border-slate-800" />
+        <section class="mx-[180px] px-[24px]">
+            <div class="py-20 relative">
+                <img src="./assets/features-illustration.svg" alt="" class="absolute z-0 top-0 left-0 opacity-50"><img
+                    src="./assets/features-illustration-02.svg" alt="" class="absolute z-0 top-0 left-0 opacity-50">
+                <div class="relative z-10 flex flex-col items-center justify-center">
+                    <div class="mx-[168px] pb-[80px] text-[60px] text-[#e2e8f0]">
+                        <h2 class="font-bold leading-none">Join the most flexible user centic - platform for teams</h2>
+                    </div>
+                    <div class="grid grid-cols-[1fr_1fr] justify-center items-center gap-3">
+                        <button
+                            class="getStarted-btn flex flex-wrap justify-center items-center w-[180px] h-[40px] text-white font-sans text-[16px] font-medium bg-[#6366f1] rounded-[4px] border-none">
+                            Get Started Free <span
+                                class="arrow inline-block tracking-wide text-[#7dd3fc] text-[16px] ml-[4px] transition-transform ease-in-out">→
+                            </span>
+                        </button>
+                        <button class="h-[40px] w-[140px] bg-[#334155] text-[#cbd5e1] text-[16px] rounded-md border-none py-[12px] px-[24px]">Read Docs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="w-4/5 mx-auto border-t border-slate-800" />
     </main>
+    <footer class="mx-[180px] px-[24px]">
+        <div class="py-[48px] grid grid-cols-10 gap-8 ">
+            <div>
+                <img src="./assets/cube.png" alt="" class="w-[32px] h-[32px] mb-[8px]">
+            </div>
+            <div></div>
+            <div class="overflow-visible ">
+                <h6 class="text-[#e2e8f0] text-[12px] mb-[12px] underline uppercase font-medium">Products</h6>
+                <ul class="text-[#64748b] text-[14px]">
+                    <li class="whitespace-nowrap">Cube Manage</li>
+                    <li class="mt-[8px] whitespace-nowrap">Cube Analyse</li>
+                    <li class="mt-[8px] whitespace-nowrap">Cube Launch</li>
+                    <li class="mt-[8px] whitespace-nowrap">Experimentation</li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="overflow-visible ">
+                <h6 class="text-[#e2e8f0] text-[12px] mb-[12px] underline uppercase font-medium">Resources</h6>
+                <ul class="text-[#64748b] text-[14px]">
+                    <li class="whitespace-nowrap">Blog</li>
+                    <li class="mt-[8px] whitespace-nowrap">Cheat Sheet</li>
+                    <li class="mt-[8px] whitespace-nowrap">Channel Partners</li>
+                    <li class="mt-[8px] whitespace-nowrap">Affiliate Program</li>
+                </ul></div>
+            <div></div>
+            <div class="overflow-visible ">
+                <h6 class="text-[#e2e8f0] text-[12px] mb-[12px] underline uppercase font-medium">Projects</h6>
+                <ul class="text-[#64748b] text-[14px]">
+                    <li class="whitespace-nowrap">Session Recording</li>
+                    <li class="mt-[8px] whitespace-nowrap">Feature Flags</li>
+                    <li class="mt-[8px] whitespace-nowrap">Heatmaps</li>
+                    <li class="mt-[8px] whitespace-nowrap">Correlation Analysis</li>
+                </ul></div>
+            <div></div>
+            <div class="overflow-visible ">
+                <h6 class="text-[#e2e8f0] text-[12px] mb-[12px] underline uppercase font-medium">company</h6>
+                <ul class="text-[#64748b] text-[14px]">
+                    <li class="whitespace-nowrap">About Us</li>
+                    <li class="mt-[8px] whitespace-nowrap">Our Story</li>
+                    <li class="mt-[8px] whitespace-nowrap">Work with Us</li>
+                </ul></div>
+            <div></div>
+        </div>
+        <div class="pb-[32px] grid grid-cols-2 items-center justify-between">
+            <div class="text-[#64748b] text-[14px]">Terms Privacy Policy</div>
+            <div>
+                <ul class="flex flex-row-reverse justify-start items-center">
+                    <li class="w-[32px] h-[32px]">
+                        <img src="./assets/i1.png" alt="" class="w-[16px] h-[16px]">
+                    </li>
+                    <li class="w-[32px] h-[32px]">
+                        <img src="./assets/i2.png" alt="" class="w-[16px] h-[16px]">
+                    </li>
+                    <li class="w-[32px] h-[32px]">
+                        <img src="./assets/i3.png" alt="" class="w-[16px] h-[16px]">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="./script.js" defer></script>
 </body>
 

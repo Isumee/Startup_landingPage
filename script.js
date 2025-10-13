@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!carousel || !slides.length) return;
 
- 
-  const slideWidth = slides[0].offsetWidth + 24; 
+  const slideWidth = slides[0].offsetWidth + 24;
 
   const nextSlide = () => {
     carousel.scrollBy({ left: slideWidth, behavior: "smooth" });
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     carousel.scrollBy({ left: -slideWidth, behavior: "smooth" });
   };
 
-
   nextBtn.addEventListener("click", () => {
     nextSlide();
     resetAutoplay();
@@ -33,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     prevSlide();
     resetAutoplay();
   });
-
 
   let autoplay = setInterval(nextSlide, 5000);
 
@@ -75,3 +72,41 @@ function switchCategory(category) {
 
 document.addEventListener("DOMContentLoaded", () => switchCategory("1"));
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("toggle");
+  const monthlyLabel = document.getElementById("monthly-label");
+  const yearlyLabel = document.getElementById("yearly-label");
+
+  // Define pricing plans
+  const prices = {
+    monthly: [35, 55, 85],
+    yearly: [29, 49, 79],
+  };
+  const priceElements = document.querySelectorAll(".price-amount");
+
+  // Function to update prices
+  function updatePrices() {
+    const isYearly = toggle.checked;
+    const plan = isYearly ? prices.yearly : prices.monthly;
+
+    // Update prices dynamically
+    priceElements.forEach((el, i) => {
+      el.textContent = plan[i];
+    });
+
+    // Update label styles
+    if (isYearly) {
+      yearlyLabel.classList.add("text-indigo-500", "font-semibold");
+      monthlyLabel.classList.remove("text-indigo-500", "font-semibold");
+    } else {
+      monthlyLabel.classList.add("text-indigo-500", "font-semibold");
+      yearlyLabel.classList.remove("text-indigo-500", "font-semibold");
+    }
+  }
+
+  // Attach event listener
+  toggle.addEventListener("change", updatePrices);
+
+  // Initialize prices on load
+  updatePrices();
+});
