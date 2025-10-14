@@ -88,11 +88,11 @@ nav {
         background-color: transparent;
         padding: 8px 20px;
         cursor: pointer;
-        transition:  transform 150ms ease, color 150ms ease;
+        transition: transform 150ms ease, color 150ms ease;
       }
       .signup-btn:hover {
         transform: translateX(2px);
-        color: #fff;        
+        color: #fff;
       }
       .getStarted-btn {
         display: flex;
@@ -128,8 +128,6 @@ nav {
   }
 }
 
-
-
 .hero {
   padding-top: 80px;
   margin: 0 180px;
@@ -149,7 +147,7 @@ nav {
 
     .hero--content-title {
       font-family: "Open Sans", sans-serif;
-      font-size: 80px;
+      font-size: 5rem;
       font-weight: 600;
       text-align: center;
       line-height: 1.1;
@@ -162,7 +160,7 @@ nav {
       margin: 0 0px 40px;
       color: #64748b;
       font-family: "Open Sans", sans-serif;
-      font-size: 20px;
+      font-size: 1.25rem;
       text-align: center;
     }
   }
@@ -263,15 +261,96 @@ nav {
   }
 }
 
-/*
+@media (min-width: 640px) {
+  nav {
+    margin: 0 16px;
+    height: 60px;
+  }
 
-<div class="py-20"><header class="pb-20 mx-40 text-center"><h2 class="mb-4 text-6xl text-white font-bold">Many tools to express your creativity</h2><p class="text-xl text-slate-500 px-14">Exceptuer sint occaecat non proident , sunt in culpa quiofficia deserunt mollit anim id est.</p></header><div class="slider flex items-center gap-6 px-6 cursor-grab active:cursor-grabbing overflow-x-auto snap-x snap-mandatory snap-center scroll-smooth no-scrollbar"role="region" aria-label="Features">
-cursor-grab active:cursor-grabbing overflow max-w-full snap-x snap-mandatory snap-center  -x-auto
-<header class="pb-20 max-w-6xl mx-auto text-center">
-                    <h2 class="mb-4 text-4xl md:text-6xl text-white font-bold">Many tools to express your creativity</h2>
-                    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">Exceptuer sint occaecat non proident , sunt in culpa qui
-                        officia deserunt mollit anim id est.</p>
-                </header>
-                <div class="slider flex items-center gap-6 px-6 cursor-grab active:cursor-grabbing overflow-x-auto snap-x snap-mandatory snap-center scroll-smooth no-scrollbar"
-                    role="region" aria-label="Features">
-*/
+  .nav--content {
+    flex-direction: row;
+  }
+
+  .hero {
+    margin: 0 16px;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .hero--content-title h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero--content-content p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .hero-img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1024px){
+  .hero--content-title h1 {
+    font-size: 5rem; 
+    line-height: 1.2;
+  }
+  .hero--content-content p {
+    font-size: 1.25rem; 
+  }
+}
+
+/* @media (max-width: 640px) {
+  nav {
+    margin: 0 16px;
+    height: 60px;
+    padding: 0 8px;
+  }
+
+  .nav--content {
+    flex-direction: row;
+  }
+
+  .right {
+    gap: 8px;
+  }
+
+  .hero {
+    margin: 0 16px;
+    padding-top: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero--content {
+    margin: 0;
+    align-items: center;
+  }
+
+  .hero--content-title h1 {
+    font-size: 1.75rem; 
+    line-height: 1.2;
+  }
+
+  .hero--content-content p {
+    font-size: 0.95rem; 
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+  }
+} */
